@@ -67,7 +67,7 @@ export const AnnouncementBar = () => {
           {/* Solar Hub Nav Link */}
           <button
             onClick={() => {
-              const target = window.location.protocol === 'file:' ? '../Solar/index.html' : '/Solar/index.html';
+              const target = window.location.protocol === 'file:' ? '../Solar/index.html' : `${import.meta.env.BASE_URL}Solar/index.html`;
               window.open(target, '_blank');
             }}
             className={`flex items-center space-x-1 font-semibold px-2 py-0.5 rounded-md transition-all text-amber-400 hover:text-amber-300`}

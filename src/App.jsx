@@ -125,7 +125,7 @@ const MainContent = () => {
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <div
                       onClick={() => {
-                        const target = window.location.protocol === 'file:' ? '../Solar/index.html' : '/Solar/index.html';
+                        const target = window.location.protocol === 'file:' ? '../Solar/index.html' : `${import.meta.env.BASE_URL}Solar/index.html`;
                         window.open(target, '_blank');
                       }}
                       className="bg-gradient-to-r from-amber-500 to-yellow-500 text-gray-900 rounded-2xl p-4 shadow-md hover:shadow-lg transition-all cursor-pointer flex items-center justify-between"

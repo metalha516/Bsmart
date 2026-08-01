@@ -105,7 +105,7 @@ export const Footer = () => {
             <li>
               <button
                 onClick={() => {
-                  const target = window.location.protocol === 'file:' ? '../Solar/index.html' : '/Solar/index.html';
+                  const target = window.location.protocol === 'file:' ? '../Solar/index.html' : `${import.meta.env.BASE_URL}Solar/index.html`;
                   window.open(target, '_blank');
                 }}
                 className="hover:text-amber-400 font-bold text-amber-400"

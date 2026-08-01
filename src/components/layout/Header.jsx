@@ -248,7 +248,7 @@ export const Header = () => {
           <div className="hidden lg:flex items-center space-x-3 text-[11px]">
             <button
               onClick={() => {
-                const target = window.location.protocol === 'file:' ? '../Solar/index.html' : '/Solar/index.html';
+                const target = window.location.protocol === 'file:' ? '../Solar/index.html' : `${import.meta.env.BASE_URL}Solar/index.html`;
                 window.open(target, '_blank');
               }}
               className="text-amber-700 font-bold bg-amber-50 hover:bg-amber-100 px-2.5 py-1 rounded-md border border-amber-200 flex items-center gap-1 transition-all"

@@ -8,6 +8,16 @@ export default defineConfig({
   plugins: [
     react(),
     {
+      name: 'copy-solar-folder',
+      closeBundle() {
+        const srcDir = path.resolve(__dirname, 'Solar');
+        const destDir = path.resolve(__dirname, 'dist/Solar');
+        if (fs.existsSync(srcDir)) {
+          fs.cpSync(srcDir, destDir, { recursive: true });
+        }
+      }
+    },
+    {
       name: 'serve-solar-folder',
       configureServer(server) {
         server.middlewares.use((req, res, next) => {
@@ -20,7 +30,7 @@ export default defineConfig({
             // Clean query params if any
             relativePath = relativePath.split('?')[0];
 
-            const filePath = path.join(__dirname, '../Solar', relativePath);
+            const filePath = path.join(__dirname, 'Solar', relativePath);
             if (fs.existsSync(filePath) && fs.statSync(filePath).isFile()) {
               const ext = path.extname(filePath).toLowerCase();
               if (ext === '.html') res.setHeader('Content-Type', 'text/html; charset=utf-8');
