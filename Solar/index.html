@@ -1,0 +1,1170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bsmart | Direct-from-China Solar Supply & Energy Marketplace</title>
+  <meta name="description"
+    content="Bsmart Direct Solar Marketplace - Tier-1 Chinese factory procurement, commercial solar station setup, wholesale equipment distribution, and 24/7 technical telemetry.">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml"
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23FF5000'%3E%3Cpath d='M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z'/%3E%3C/svg%3E">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="./src/css/main.css">
+  <link rel="stylesheet" href="./src/css/header.css">
+  <link rel="stylesheet" href="./src/css/marketplace.css">
+  <link rel="stylesheet" href="./src/css/calculator.css">
+  <link rel="stylesheet" href="./src/css/modal.css">
+
+  <!-- SVG Chart Definitions -->
+  <svg style="display: none;">
+    <defs>
+      <linearGradient id="chartGradientLight" x1="0%" y1="0%" x2="0%" y2="100%">
+        <stop offset="0%" stop-color="#FF5000" stop-opacity="0.35" />
+        <stop offset="100%" stop-color="#FF5000" stop-opacity="0.0" />
+      </linearGradient>
+    </defs>
+  </svg>
+</head>
+
+<body>
+
+  <!-- ==========================================================================
+       1. TOP UTILITY TOOLBAR
+       ========================================================================== -->
+  <div class="top-utility-bar">
+    <div class="container top-utility-inner">
+      <div style="display:flex; align-items:center; gap:16px;">
+        <span>🔥 China Sourcing Hotline: <strong style="color:#FFF;">+1 (800) 555-SOLAR</strong></span>
+        <span>|</span>
+        <span>Factory Hubs: Ningbo &bull; Shenzhen &bull; Wuxi</span>
+      </div>
+
+      <ul class="utility-nav">
+        <li>
+          <select class="currency-selector" id="currency-selector" aria-label="Select Currency">
+            <option value="USD">USD ($)</option>
+            <option value="CNY">CNY (¥ RMB)</option>
+          </select>
+        </li>
+        <li><a href="#why-us" class="utility-link">Factory Direct Guarantee</a></li>
+        <li><a href="#calculator" class="utility-link">ROI Calculator</a></li>
+        <li><a href="#" class="utility-link" data-open-quote data-service="Supplier Portal">Supplier Login</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       2. MAIN LIGHT MARKETPLACE HEADER
+       ========================================================================== -->
+  <header class="site-header-light">
+    <div class="container">
+      <div class="header-main-row">
+
+        <!-- Brand Logo -->
+        <a href="#" class="brand-logo-light" aria-label="Bsmart Home">
+          <div class="logo-badge-orange">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <circle cx="12" cy="12" r="5"></circle>
+              <line x1="12" y1="1" x2="12" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="23"></line>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            </svg>
+          </div>
+          <div>
+            <div class="logo-text-orange">Bsmart<span>.</span></div>
+            <span class="logo-sub">Direct China Solar</span>
+          </div>
+        </a>
+
+        <!-- Central Product Search Bar -->
+        <div class="search-container">
+          <form id="search-form" style="display:flex; width:100%;">
+            <svg class="search-icon-left" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+            <input type="text" id="search-input" class="search-input"
+              placeholder="Search Tier-1 LONGi 580W Panels, 100kW Huawei Inverters, BESS..." required>
+            <button type="submit" class="search-btn">
+              <span>Search Factory</span>
+            </button>
+          </form>
+
+
+        </div>
+
+        <!-- Right Header Actions -->
+        <div class="header-user-actions">
+          <a href="#" class="cart-quote-btn" data-open-quote data-service="Cart Quote">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="9" cy="21" r="1"></circle>
+              <circle cx="20" cy="21" r="1"></circle>
+              <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+            </svg>
+            <span>Quote Basket</span>
+            <span class="cart-badge">3</span>
+          </a>
+
+          <button class="btn btn-orange btn-sm" data-open-quote data-service="Fast Quote">Fast RFP Quote</button>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Horizontal Category Bar Strip -->
+    <div class="header-nav-strip">
+      <div class="container header-nav-inner">
+        <div class="all-cat-btn">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+          All Supply Categories
+        </div>
+
+        <ul class="strip-links">
+          <li><a href="#promo-grid-section" class="strip-link active">Factory Direct Deals</a></li>
+          <li><a href="#services" class="strip-link">Solar Station EPC</a></li>
+          <li><a href="#why-us" class="strip-link">China Sourcing Advantage</a></li>
+          <li><a href="#calculator" class="strip-link">Interactive Calculator</a></li>
+          <li><a href="#contact" class="strip-link">Contact Engineering</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       3. HIGH-DENSITY TOP VIEWPORT (3-COLUMN MARKETPLACE GRID)
+       ========================================================================== -->
+  <main class="container">
+    <div class="top-hero-grid">
+
+      <!-- COLUMN 1: Persistent Left Category Sidebar -->
+      <aside class="category-sidebar">
+        <ul class="category-list">
+          <li class="category-item">
+            <a href="#promo-grid-section" class="category-link">
+              <span class="category-icon">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="5"></circle>
+                </svg>
+                Tier-1 Solar Panels
+              </span>
+              <span class="cat-hot-badge">HOT</span>
+            </a>
+          </li>
+          <li class="category-item">
+            <a href="#promo-grid-section" class="category-link">
+              <span class="category-icon">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                </svg>
+                Smart String Inverters
+              </span>
+              <span style="font-size:0.75rem; color:var(--text-muted);">&rsaquo;</span>
+            </a>
+          </li>
+          <li class="category-item">
+            <a href="#promo-grid-section" class="category-link">
+              <span class="category-icon">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="2" y="7" width="20" height="14" rx="2"></rect>
+                </svg>
+                Container BESS Storage
+              </span>
+              <span class="cat-hot-badge" style="background:var(--accent-orange);">NEW</span>
+            </a>
+          </li>
+          <li class="category-item">
+            <a href="#promo-grid-section" class="category-link">
+              <span class="category-icon">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path
+                    d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z">
+                  </path>
+                </svg>
+                Mounting Rails & Racking
+              </span>
+              <span style="font-size:0.75rem; color:var(--text-muted);">&rsaquo;</span>
+            </a>
+          </li>
+          <li class="category-item">
+            <a href="#promo-grid-section" class="category-link">
+              <span class="category-icon">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M4 11a9 9 0 0 1 9 9"></path>
+                  <path d="M4 4a16 16 0 0 1 16 16"></path>
+                  <circle cx="5" cy="19" r="1"></circle>
+                </svg>
+                Solar Cables & Connectors
+              </span>
+              <span style="font-size:0.75rem; color:var(--text-muted);">&rsaquo;</span>
+            </a>
+          </li>
+          <li class="category-item">
+            <a href="#promo-grid-section" class="category-link">
+              <span class="category-icon">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path
+                    d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z">
+                  </path>
+                </svg>
+                Factory Direct Container Deals
+              </span>
+              <span class="cat-hot-badge">-40%</span>
+            </a>
+          </li>
+          <li class="category-item">
+            <a href="#services" class="category-link">
+              <span class="category-icon">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="3" y="3" width="7" height="7"></rect>
+                  <rect x="14" y="3" width="7" height="7"></rect>
+                  <rect x="14" y="14" width="7" height="7"></rect>
+                  <rect x="3" y="14" width="7" height="7"></rect>
+                </svg>
+                Commercial EPC Services
+              </span>
+              <span style="font-size:0.75rem; color:var(--text-muted);">&rsaquo;</span>
+            </a>
+          </li>
+          <li class="category-item">
+            <a href="#contact" class="category-link">
+              <span class="category-icon">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path
+                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                  </path>
+                </svg>
+                24/7 Telemetry Parts
+              </span>
+              <span style="font-size:0.75rem; color:var(--text-muted);">&rsaquo;</span>
+            </a>
+          </li>
+        </ul>
+      </aside>
+
+      <!-- COLUMN 2: Center Hero Banner Carousel & Live Stream -->
+      <div class="hero-center-box">
+        <div class="banner-carousel">
+          <img src="./assets/china-factory-hero.png" alt="China Solar Factory Automation" class="banner-bg-img">
+
+          <div>
+            <div class="banner-tag">
+              <span style="color:#FF5000;">●</span> Direct Manufacturer Sourcing
+            </div>
+            <h1 class="banner-title">
+              Direct-from-China Solar Equipment <span style="color:#FFE600;">Up to 40% OFF</span>
+            </h1>
+            <p class="banner-desc">
+              Direct factory procurement from Tier-1 manufacturers in Ningbo & Wuxi. Bypassing middleman trading markups
+              with on-site ISO quality assurance.
+            </p>
+          </div>
+
+          <div style="display:flex; gap:12px;">
+            <button class="btn btn-orange btn-lg" data-open-quote data-service="Direct Factory Promotion">
+              <span>Get Factory Price Sheet</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <polyline points="9 18 15 12 9 6"></polyline>
+              </svg>
+            </button>
+            <a href="#calculator" class="btn btn-outline-orange btn-lg">Calculate ROI</a>
+          </div>
+        </div>
+
+        <!-- Live Factory Broadcast Feed Widget -->
+        <div class="live-stream-card">
+          <div class="live-indicator">
+            <div class="live-dot"></div>
+            <span>LIVE STREAM: Ningbo Factory Line #4 (EL Flash Testing)</span>
+          </div>
+          <button class="btn btn-sm btn-outline-orange" data-open-quote data-service="Factory Live Inspection">Watch
+            Broadcast</button>
+        </div>
+      </div>
+
+      <!-- COLUMN 3: Right User Quick Actions & Quote Box -->
+      <div class="user-quote-box">
+        <div>
+          <div class="user-welcome-header">
+            <div class="user-avatar">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                <circle cx="12" cy="7" r="4"></circle>
+              </svg>
+            </div>
+            <div>
+              <div style="font-weight:700; font-size:0.95rem;">Hi, Partner!</div>
+              <div style="font-size:0.75rem; color:var(--text-muted);">Direct Factory Buyer Account</div>
+            </div>
+          </div>
+
+          <div class="quick-stats-grid">
+            <div class="stat-chip">
+              <div class="stat-chip-num">500+</div>
+              <div class="stat-chip-label">MW Sourced</div>
+            </div>
+            <div class="stat-chip">
+              <div class="stat-chip-num">-40%</div>
+              <div class="stat-chip-label">Avg Savings</div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div
+            style="background:var(--bg-hover); border:1px dashed var(--border-orange); padding:12px; border-radius:var(--radius-xs); margin-bottom:12px; text-align:center;">
+            <div style="font-size:0.8rem; font-weight:700; color:var(--accent-orange);">Instant RFP Dispatch</div>
+            <div style="font-size:0.75rem; color:var(--text-secondary);">Direct Ningbo Factory Desk</div>
+          </div>
+
+          <button class="btn btn-orange btn-full" data-open-quote data-service="User Quick Action">Request Factory
+            Quote</button>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- ==========================================================================
+         4. PROMOTIONAL TILE MOSAIC GRID (FEATURING GENERATED PRODUCT IMAGES)
+         ========================================================================== -->
+    <section id="promo-grid-section">
+      <div class="section-header-compact">
+        <h2 class="section-header-title">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--accent-orange)" stroke-width="2.5">
+            <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+          </svg>
+          Direct Sourcing <span>Promotional Tile Mosaic</span>
+        </h2>
+        <span class="badge-red">FLASH FACTORY DEALS</span>
+      </div>
+
+      <div class="promo-mosaic-grid">
+
+        <!-- Tile 1: China Supply Chain Support (Large 2x2 Tile) -->
+        <div class="promo-tile promo-tile-large" data-open-detail="china-supply">
+          <div>
+            <div class="promo-img-wrapper" style="height:220px;">
+              <img src="./assets/solar-panel-tier1.png" alt="Tier-1 Monocrystalline Solar Panel">
+              <div class="discount-ribbon">DIRECT 40% OFF</div>
+              <div class="moq-tag">MOQ: 1 FCL Container</div>
+            </div>
+
+            <div class="badge-orange" style="margin-bottom:8px;">Direct Factory Sourcing</div>
+            <h3 class="promo-title" style="font-size:1.3rem;">China Supply Chain & Tier-1 Panel Procurement</h3>
+            <p class="promo-desc" style="font-size:0.9rem;">
+              Direct procurement from Wuxi & Ningbo factories. LONGi Hi-MO, Trina Vertex, Jinko Tiger Neo modules with
+              on-site ISO9001 EL flash quality assurance.
+            </p>
+          </div>
+
+          <div>
+            <div class="promo-price-row">
+              <div>
+                <span class="price-tag-red" style="font-size:1.6rem;">
+                  <span class="currency-symbol">¥</span>2,450 <span style="font-size:0.8rem; color:var(--text-muted);">/
+                    kW ($340/kW)</span>
+                </span>
+                <span class="price-strike">¥4,100</span>
+              </div>
+              <button class="btn btn-orange btn-sm" data-open-quote data-service="China Supply Chain Support">Order
+                Direct</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tile 2: Solar Station Setup & EPC (Large 2x2 Tile) -->
+        <div class="promo-tile promo-tile-large" data-open-detail="station-setup">
+          <div>
+            <div class="promo-img-wrapper" style="height:220px;">
+              <img src="./assets/china-factory-hero.png" alt="Commercial Solar Station Setup & Line">
+              <div class="discount-ribbon" style="background:var(--accent-orange);">TURNKEY EPC</div>
+              <div class="moq-tag">Scale: 50kW - 10MW+</div>
+            </div>
+
+            <div class="badge-green" style="margin-bottom:8px;">Commercial Infrastructure</div>
+            <h3 class="promo-title" style="font-size:1.3rem;">Solar Power Station Setup & Installation</h3>
+            <p class="promo-desc" style="font-size:0.9rem;">
+              Complete turnkey EPC installation for commercial rooftops & ground mounts. High-voltage step-up
+              transformers and BESS battery storage tie-in.
+            </p>
+          </div>
+
+          <div>
+            <div class="promo-price-row">
+              <div>
+                <span class="price-tag-red" style="font-size:1.6rem;">
+                  <span class="currency-symbol">¥</span>6,200 <span style="font-size:0.8rem; color:var(--text-muted);">/
+                    kW ($860/kW)</span>
+                </span>
+                <span class="price-strike">¥9,500</span>
+              </div>
+              <button class="btn btn-orange btn-sm" data-open-quote data-service="Solar Station Setup">Request
+                Design</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tile 3: Smart String Inverters (Medium Tile) -->
+        <div class="promo-tile promo-tile-medium" data-open-detail="wholesale">
+          <div class="promo-img-wrapper" style="height:120px;">
+            <img src="./assets/solar-inverter-smart.png" alt="Smart String Inverters">
+            <div class="discount-ribbon">HIGH EFFICIENCY</div>
+          </div>
+          <div>
+            <div class="badge-orange" style="margin-bottom:4px;">Inverter Technology</div>
+            <h3 class="promo-title">Huawei & Sungrow Commercial String Inverters</h3>
+            <p class="promo-desc">Multi-MPPT smart string solar inverters with 98.8% peak efficiency & remote cloud telemetry.
+            </p>
+          </div>
+          <div class="promo-price-row">
+            <div>
+              <span class="price-tag-red" style="font-size:1.2rem;">
+                <span class="currency-symbol">¥</span>1,850 <span style="font-size:0.75rem; color:var(--text-muted);">/
+                  Unit ($256)</span>
+              </span>
+              <span class="price-strike">¥2,800</span>
+            </div>
+            <button class="btn btn-outline-orange btn-sm" data-open-quote data-service="Wholesale Distribution">Get Tier
+              Sheet</button>
+          </div>
+        </div>
+
+        <!-- Tile 4: Racking & Mounting Rails (Medium Tile) -->
+        <div class="promo-tile promo-tile-medium" data-open-detail="installation">
+          <div class="promo-img-wrapper" style="height:120px;">
+            <img src="./assets/solar-mounting-rails.png" alt="Solar Racking & Mounting Hardware">
+            <div class="discount-ribbon" style="background:var(--accent-green);">STRUCTURAL RATED</div>
+          </div>
+          <div>
+            <div class="badge-green" style="margin-bottom:4px;">Racking Hardware</div>
+            <h3 class="promo-title">Aluminum Roof Rails & Ground Racking Kits</h3>
+            <p class="promo-desc">Heavy-duty anodized aluminum racking certified for 160 mph wind load & extreme snow loads.
+            </p>
+          </div>
+          <div class="promo-price-row">
+            <div>
+              <span class="price-tag-red" style="font-size:1.2rem;">
+                <span class="currency-symbol">¥</span>420 <span style="font-size:0.75rem; color:var(--text-muted);">/ kW
+                  ($58)</span>
+              </span>
+            </div>
+            <button class="btn btn-outline-orange btn-sm" data-open-quote data-service="Professional Installation">View
+              Specs</button>
+          </div>
+        </div>
+
+        <!-- Tile 5: Container BESS Storage (Small Tile) -->
+        <div class="promo-tile" data-open-detail="tech-support">
+          <div class="promo-img-wrapper" style="height:100px;">
+            <img src="./assets/bess-container-storage.png" alt="BESS Containerized Energy Storage">
+          </div>
+          <div>
+            <div class="badge-orange" style="margin-bottom:4px;">Energy Storage</div>
+            <h3 class="promo-title">Containerized BESS Storage</h3>
+            <p class="promo-desc">Lithium iron phosphate (LFP) 100kWh-2.5MWh industrial battery cabinets.</p>
+          </div>
+          <div class="promo-price-row">
+            <span class="price-tag-red" style="font-size:1.1rem;"><span class="currency-symbol">¥</span>1,200 <span
+                style="font-size:0.7rem; color:var(--text-muted);">/kWh</span></span>
+            <button class="btn btn-sm btn-outline-orange" data-open-quote data-service="Technical Support">BESS Specs</button>
+          </div>
+        </div>
+
+        <!-- Tile 6: Cost Reduction & ROI Optimization (Small Tile) -->
+        <div class="promo-tile" data-open-detail="cost-reduction">
+          <div>
+            <div class="badge-green" style="margin-bottom:6px;">Energy Audit</div>
+            <h3 class="promo-title">Peak-Shaving ROI</h3>
+            <p class="promo-desc">Demand charge mitigation & ESG carbon credits.</p>
+          </div>
+          <div class="promo-price-row">
+            <span class="price-tag-red" style="font-size:1.1rem;">¥0 <span
+                style="font-size:0.7rem; color:var(--text-muted);">Audit Fee</span></span>
+            <button class="btn btn-sm btn-outline-orange" data-open-quote
+              data-service="Cost Reduction">Calculate</button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         TIER-1 EQUIPMENT PRODUCT SHOWCASE MARKETPLACE (NANO BANANA AI ASSETS)
+         ========================================================================== -->
+    <section style="margin-top:32px;">
+      <div class="section-header-compact">
+        <h2 class="section-header-title">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--accent-orange)" stroke-width="2.5">
+            <rect x="2" y="7" width="20" height="14" rx="2"></rect>
+            <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+          </svg>
+          Direct Factory <span>Tier-1 Product Marketplace</span>
+        </h2>
+        <span class="badge-orange">ISO9001 CERTIFIED EQUIPMENT</span>
+      </div>
+
+      <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap:16px;">
+        
+        <!-- Product Card 1: Solar Panel -->
+        <div style="background:#FFF; border:1px solid var(--border-subtle); border-radius:var(--radius-md); padding:16px; box-shadow:var(--shadow-card); display:flex; flex-direction:column; justify-content:space-between;">
+          <div>
+            <div style="height:180px; width:100%; border-radius:var(--radius-sm); overflow:hidden; margin-bottom:12px; border:1px solid var(--border-subtle);">
+              <img src="./assets/solar-panel-tier1.png" alt="LONGi Hi-MO 6 Tier-1 Solar Panel" style="width:100%; height:100%; object-fit:cover;">
+            </div>
+            <div class="badge-orange" style="margin-bottom:6px;">PV Module</div>
+            <h3 style="font-size:1.05rem; font-weight:700; color:var(--text-primary); margin-bottom:4px;">LONGi Hi-MO 6 580W N-Type</h3>
+            <p style="font-size:0.8rem; color:var(--text-secondary); line-height:1.4; margin-bottom:10px;">High efficiency 22.8% HPBC cell technology, anti-reflective tempered glass, 30-year power output warranty.</p>
+          </div>
+          <div style="display:flex; align-items:center; justify-content:space-between; border-top:1px dashed var(--border-subtle); padding-top:10px;">
+            <div>
+              <div style="font-size:1.2rem; font-weight:800; color:var(--accent-red);">$0.18 <span style="font-size:0.75rem; color:var(--text-muted);">/ Watt</span></div>
+            </div>
+            <button class="btn btn-orange btn-sm" data-open-quote data-service="LONGi Hi-MO 6 Panel">RFP Quote</button>
+          </div>
+        </div>
+
+        <!-- Product Card 2: Smart String Inverter -->
+        <div style="background:#FFF; border:1px solid var(--border-subtle); border-radius:var(--radius-md); padding:16px; box-shadow:var(--shadow-card); display:flex; flex-direction:column; justify-content:space-between;">
+          <div>
+            <div style="height:180px; width:100%; border-radius:var(--radius-sm); overflow:hidden; margin-bottom:12px; border:1px solid var(--border-subtle);">
+              <img src="./assets/solar-inverter-smart.png" alt="Huawei SUN2000 Smart Solar Inverter" style="width:100%; height:100%; object-fit:cover;">
+            </div>
+            <div class="badge-orange" style="margin-bottom:6px;">Inverter System</div>
+            <h3 style="font-size:1.05rem; font-weight:700; color:var(--text-primary); margin-bottom:4px;">Huawei SUN2000 100kW Inverter</h3>
+            <p style="font-size:0.8rem; color:var(--text-secondary); line-height:1.4; margin-bottom:10px;">10 MPPTs, AFCI arc fault protection, IP66 waterproof casing, built-in PLC telemetry and remote diagnostics.</p>
+          </div>
+          <div style="display:flex; align-items:center; justify-content:space-between; border-top:1px dashed var(--border-subtle); padding-top:10px;">
+            <div>
+              <div style="font-size:1.2rem; font-weight:800; color:var(--accent-red);">$3,450 <span style="font-size:0.75rem; color:var(--text-muted);">/ Unit</span></div>
+            </div>
+            <button class="btn btn-orange btn-sm" data-open-quote data-service="Huawei 100kW Inverter">RFP Quote</button>
+          </div>
+        </div>
+
+        <!-- Product Card 3: BESS Storage Container -->
+        <div style="background:#FFF; border:1px solid var(--border-subtle); border-radius:var(--radius-md); padding:16px; box-shadow:var(--shadow-card); display:flex; flex-direction:column; justify-content:space-between;">
+          <div>
+            <div style="height:180px; width:100%; border-radius:var(--radius-sm); overflow:hidden; margin-bottom:12px; border:1px solid var(--border-subtle);">
+              <img src="./assets/bess-container-storage.png" alt="CATL Industrial BESS Battery Storage" style="width:100%; height:100%; object-fit:cover;">
+            </div>
+            <div class="badge-green" style="margin-bottom:6px;">Energy Storage</div>
+            <h3 style="font-size:1.05rem; font-weight:700; color:var(--text-primary); margin-bottom:4px;">Bsmart 250kWh Container BESS</h3>
+            <p style="font-size:0.8rem; color:var(--text-secondary); line-height:1.4; margin-bottom:10px;">Liquid-cooled LFP battery container, HVAC climate control, automated aerosol fire suppression & peak shaving BMS.</p>
+          </div>
+          <div style="display:flex; align-items:center; justify-content:space-between; border-top:1px dashed var(--border-subtle); padding-top:10px;">
+            <div>
+              <div style="font-size:1.2rem; font-weight:800; color:var(--accent-red);">$42,500 <span style="font-size:0.75rem; color:var(--text-muted);">/ Container</span></div>
+            </div>
+            <button class="btn btn-orange btn-sm" data-open-quote data-service="250kWh BESS Container">RFP Quote</button>
+          </div>
+        </div>
+
+        <!-- Product Card 4: Mounting Racking -->
+        <div style="background:#FFF; border:1px solid var(--border-subtle); border-radius:var(--radius-md); padding:16px; box-shadow:var(--shadow-card); display:flex; flex-direction:column; justify-content:space-between;">
+          <div>
+            <div style="height:180px; width:100%; border-radius:var(--radius-sm); overflow:hidden; margin-bottom:12px; border:1px solid var(--border-subtle);">
+              <img src="./assets/solar-mounting-rails.png" alt="Solar Roof Racking and Mounting Rail Hardware" style="width:100%; height:100%; object-fit:cover;">
+            </div>
+            <div class="badge-green" style="margin-bottom:6px;">Mounting Racking</div>
+            <h3 style="font-size:1.05rem; font-weight:700; color:var(--text-primary); margin-bottom:4px;">Anodized Aluminum Rail Kit</h3>
+            <p style="font-size:0.8rem; color:var(--text-secondary); line-height:1.4; margin-bottom:10px;">6005-T5 structural aluminum rails, EPDM waterproof rubber gaskets, mid & end clamps with grounding lugs.</p>
+          </div>
+          <div style="display:flex; align-items:center; justify-content:space-between; border-top:1px dashed var(--border-subtle); padding-top:10px;">
+            <div>
+              <div style="font-size:1.2rem; font-weight:800; color:var(--accent-red);">$38 <span style="font-size:0.75rem; color:var(--text-muted);">/ Panel Kit</span></div>
+            </div>
+            <button class="btn btn-orange btn-sm" data-open-quote data-service="Solar Mounting Rail Kit">RFP Quote</button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         5. HIGHLY INTERACTIVE SOLAR ROI CALCULATOR ENGINE
+         ========================================================================== -->
+    <section id="calculator" style="margin-top:40px;">
+      <div class="section-header-compact">
+        <h2 class="section-header-title">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--accent-orange)" stroke-width="2.5">
+            <rect x="4" y="2" width="16" height="20" rx="2"></rect>
+            <line x1="8" y1="6" x2="16" y2="6"></line>
+          </svg>
+          Interactive Solar <span>ROI Calculator Engine</span>
+        </h2>
+        <span class="badge-orange">REAL-TIME FINANCIAL SIMULATION</span>
+      </div>
+
+      <div class="calculator-card-light">
+        <div class="calc-grid-light">
+
+          <!-- Controls Left Pane -->
+          <div class="calc-inputs-pane-light">
+
+            <div class="calc-pane-title">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--accent-orange)" stroke-width="2">
+                <line x1="4" y1="21" x2="4" y2="14"></line>
+                <line x1="12" y1="21" x2="12" y2="10"></line>
+                <line x1="20" y1="21" x2="20" y2="3"></line>
+              </svg>
+              <span>System & Site Input Parameters</span>
+            </div>
+
+            <!-- Roof Area Input Group (Slider + Synced Number Field + Quick Presets) -->
+            <div class="calc-input-group">
+              <div class="calc-label-row">
+                <label class="calc-label" for="calc-roof-area">Roof / Land Area</label>
+                <div class="calc-number-box">
+                  <input type="number" id="calc-roof-area-num" class="calc-num-input" value="5000" min="500" max="50000">
+                  <span class="calc-num-unit" id="area-unit-label">sq ft</span>
+                </div>
+              </div>
+              
+              <input type="range" id="calc-roof-area" class="calc-slider" min="500" max="50000" step="250" value="5000">
+
+              <div style="display:flex; align-items:center; justify-content:space-between; margin-top:4px;">
+                <div class="preset-btns-row">
+                  <span style="font-size:0.7rem; color:var(--text-muted); font-weight:600; margin-right:2px;">Presets:</span>
+                  <button class="preset-btn" data-preset-area="2000">2,000</button>
+                  <button class="preset-btn active" data-preset-area="5000">5,000</button>
+                  <button class="preset-btn" data-preset-area="15000">15,000</button>
+                  <button class="preset-btn" data-preset-area="50000">50,000</button>
+                </div>
+
+                <div class="toggle-btn-group">
+                  <button class="toggle-btn active" id="unit-sqft">Sq Ft</button>
+                  <button class="toggle-btn" id="unit-sqm">m²</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Monthly Electricity Bill Input Group -->
+            <div class="calc-input-group">
+              <div class="calc-label-row">
+                <label class="calc-label" for="calc-monthly-bill">Average Monthly Electricity Bill</label>
+                <div class="calc-number-box">
+                  <input type="number" id="calc-monthly-bill-num" class="calc-num-input" value="2500" min="100" max="25000">
+                  <span class="calc-num-unit">$/Mo</span>
+                </div>
+              </div>
+              
+              <input type="range" id="calc-monthly-bill" class="calc-slider" min="100" max="25000" step="100" value="2500">
+
+              <div class="preset-btns-row">
+                <span style="font-size:0.7rem; color:var(--text-muted); font-weight:600; margin-right:2px;">Presets:</span>
+                <button class="preset-btn" data-preset-bill="500">$500</button>
+                <button class="preset-btn active" data-preset-bill="2500">$2,500</button>
+                <button class="preset-btn" data-preset-bill="8000">$8,000</button>
+                <button class="preset-btn" data-preset-bill="20000">$20,000</button>
+              </div>
+            </div>
+
+            <!-- Facility Type Selector -->
+            <div>
+              <label class="calc-label" style="display:block; margin-bottom:8px;">Facility Architecture Type</label>
+              <div class="facility-options">
+                <div class="facility-opt active" data-facility="commercial">
+                  <span>🏢 Commercial Roof</span>
+                  <span style="font-size:0.7rem; color:var(--accent-orange); font-weight:700;">Standard</span>
+                </div>
+                <div class="facility-opt" data-facility="industrial">
+                  <span>🏭 Industrial Plant</span>
+                  <span style="font-size:0.7rem; color:var(--accent-green); font-weight:700;">+10% Yield</span>
+                </div>
+                <div class="facility-opt" data-facility="ground">
+                  <span>☀️ Ground Mount</span>
+                  <span style="font-size:0.7rem; color:var(--accent-green); font-weight:700;">+20% Yield</span>
+                </div>
+                <div class="facility-opt" data-facility="residential">
+                  <span>🏡 Residential Villa</span>
+                  <span style="font-size:0.7rem; color:var(--text-muted); font-weight:700;">Microgrid</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Electricity Tariff & BESS Battery Selection -->
+            <div style="display:grid; grid-template-columns:1fr 1fr; gap:12px;">
+              
+              <!-- Electricity Tariff -->
+              <div style="background:var(--bg-secondary); padding:12px; border-radius:var(--radius-xs); border:1px solid var(--border-subtle);">
+                <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:6px;">
+                  <label class="calc-label" style="font-size:0.8rem;">Utility Electricity Tariff</label>
+                  <span style="font-size:0.85rem; font-weight:800; color:var(--accent-orange);" id="calc-tariff-val">$0.18/kWh</span>
+                </div>
+                <input type="range" id="calc-tariff" class="calc-slider" min="0.10" max="0.45" step="0.01" value="0.18">
+              </div>
+
+              <!-- Sun Peak Hours / Irradiation -->
+              <div style="background:var(--bg-secondary); padding:12px; border-radius:var(--radius-xs); border:1px solid var(--border-subtle);">
+                <div style="font-size:0.8rem; font-weight:600; color:var(--text-primary); margin-bottom:4px;">Annual Energy Yield</div>
+                <div style="font-family:var(--font-heading); font-size:1.1rem; font-weight:800; color:var(--accent-green);" id="res-energy-annual">90.6 MWh/Yr</div>
+                <div style="font-size:0.68rem; color:var(--text-muted);">Est. 1,450 kWh / kW / Year</div>
+              </div>
+
+            </div>
+
+            <!-- BESS Energy Storage Option -->
+            <div>
+              <label class="calc-label" style="display:block; margin-bottom:8px;">BESS Battery Energy Storage Option (Peak Shaving)</label>
+              <div class="bess-options-grid">
+                <div class="bess-opt-btn active" data-bess="0">
+                  <div class="bess-opt-title">No Battery</div>
+                  <div class="bess-opt-sub">Grid Tie Only</div>
+                </div>
+                <div class="bess-opt-btn" data-bess="50">
+                  <div class="bess-opt-title">50 kWh</div>
+                  <div class="bess-opt-sub">+15% Savings</div>
+                </div>
+                <div class="bess-opt-btn" data-bess="100">
+                  <div class="bess-opt-title">100 kWh</div>
+                  <div class="bess-opt-sub">+25% Savings</div>
+                </div>
+                <div class="bess-opt-btn" data-bess="250">
+                  <div class="bess-opt-title">250 kWh</div>
+                  <div class="bess-opt-sub">Full Backup</div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Results Output Right Pane -->
+          <div class="calc-results-pane-light">
+
+            <!-- China Direct Savings Comparison Highlight Box -->
+            <div class="comparison-savings-box">
+              <div class="comp-price-item">
+                <span class="comp-label">Local EPC Cost</span>
+                <span class="comp-val-strike" id="res-local-capex">$98,500</span>
+              </div>
+
+              <div class="comp-price-item">
+                <span class="comp-label">Bsmart China Direct</span>
+                <span class="comp-val-bsmart" id="res-china-capex">$57,500</span>
+              </div>
+
+              <div class="comp-saved-badge" id="res-savings-pct">-41% DIRECT SAVINGS</div>
+            </div>
+
+            <!-- Recommended System Size Badge -->
+            <div class="result-card-main-light">
+              <div class="result-main-value" id="res-system-size">62.5 kW</div>
+              <div class="result-main-label">Recommended Bsmart Solar Capacity</div>
+            </div>
+
+            <!-- Key Financial Metric Chips Grid -->
+            <div class="results-row">
+              <div class="result-sub-card-light">
+                <div class="result-sub-value" id="res-monthly-savings">$2,125</div>
+                <div class="result-sub-label">Est. Monthly Savings</div>
+              </div>
+
+              <div class="result-sub-card-light">
+                <div class="result-sub-value" style="color:var(--accent-orange);" id="res-25yr-savings">$860k</div>
+                <div class="result-sub-label">25-Yr Net Cashflow ROI</div>
+              </div>
+
+              <div class="result-sub-card-light">
+                <div class="result-sub-value" style="color:var(--accent-green);" id="res-payback">3.2 Yrs</div>
+                <div class="result-sub-label">Capital Payback Period</div>
+              </div>
+
+              <div class="result-sub-card-light">
+                <div class="result-sub-value" style="color:var(--accent-red);" id="res-co2-offset">84 Tons/Yr</div>
+                <div class="result-sub-label">CO2 Carbon Offset</div>
+              </div>
+            </div>
+
+            <!-- Savings Interactive Milestone Chart -->
+            <div>
+              <div class="chart-box-header">
+                <span style="font-size:0.8rem; font-weight:700; color:var(--text-secondary);">25-Year Financial Cumulative ROI</span>
+                <span class="chart-milestone-info" id="chart-milestone-txt">Payback achieved in 3.2 Yrs</span>
+              </div>
+
+              <div class="savings-chart-container">
+                <svg class="savings-chart-svg" viewBox="0 0 320 110">
+                  <path class="chart-area-fill" id="chart-area-bsmart" d="" />
+                  <path class="chart-line-bsmart" id="chart-path-bsmart" d="" />
+                  <g id="chart-nodes-group"></g>
+                </svg>
+              </div>
+            </div>
+
+            <button class="btn btn-orange btn-full btn-lg" id="calc-quote-btn" data-open-quote
+              data-service="Calculator Inquiry">
+              <span>Get Custom Quote Based on This Estimate</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <polyline points="9 18 15 12 9 6"></polyline>
+              </svg>
+            </button>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         6. WHY CHOOSE US / CHINA PARTNERSHIP VISUALIZER
+         ========================================================================== -->
+    <section id="why-us">
+      <div class="section-header-compact">
+        <h2 class="section-header-title">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--accent-orange)" stroke-width="2.5">
+            <circle cx="12" cy="12" r="10"></circle>
+            <line x1="2" y1="12" x2="22" y2="12"></line>
+          </svg>
+          The Bsmart <span>China Sourcing Advantage</span>
+        </h2>
+        <span class="badge-green">DIRECT MANUFACTURER DEALS</span>
+      </div>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px;">
+        <div
+          style="background:#FFF; border:1px solid var(--border-subtle); border-radius:var(--radius-md); padding:20px;">
+          <h3 style="font-size:1.1rem; color:var(--accent-orange); margin-bottom:6px;">1. Direct Factory Access</h3>
+          <p style="color:var(--text-secondary); font-size:0.85rem; line-height:1.5;">Direct allocation from LONGi,
+            Trina, and Huawei factory lines in Wuxi and Ningbo.</p>
+        </div>
+        <div
+          style="background:#FFF; border:1px solid var(--border-subtle); border-radius:var(--radius-md); padding:20px;">
+          <h3 style="font-size:1.1rem; color:var(--accent-red); margin-bottom:6px;">2. On-Site ISO Quality Control</h3>
+          <p style="color:var(--text-secondary); font-size:0.85rem; line-height:1.5;">Resident engineers perform EL
+            flash testing and crack inspection before container seal.</p>
+        </div>
+        <div
+          style="background:#FFF; border:1px solid var(--border-subtle); border-radius:var(--radius-md); padding:20px;">
+          <h3 style="font-size:1.1rem; color:var(--accent-orange); margin-bottom:6px;">3. FCL Container Logistics</h3>
+          <p style="color:var(--text-secondary); font-size:0.85rem; line-height:1.5;">Integrated maritime shipping from
+            Ningbo Port to regional bonded warehouses.</p>
+        </div>
+        <div
+          style="background:#FFF; border:1px solid var(--border-subtle); border-radius:var(--radius-md); padding:20px;">
+          <h3 style="font-size:1.1rem; color:var(--accent-green); margin-bottom:6px;">4. 25-Yr Output Guarantee</h3>
+          <p style="color:var(--text-secondary); font-size:0.85rem; line-height:1.5;">Linear power output warranty
+            backed by BloombergNEF Tier-1 bankability standards.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         7. DIRECT RFP CONTACT & FORM
+         ========================================================================== -->
+    <section id="contact">
+      <div class="section-header-compact">
+        <h2 class="section-header-title">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--accent-orange)" stroke-width="2.5">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+            <polyline points="22,6 12,13 2,6"></polyline>
+          </svg>
+          Formal Project <span>RFP & Inquiry</span>
+        </h2>
+        <span class="badge-red">DIRECT FACTORY DESK</span>
+      </div>
+
+      <div style="display: grid; grid-template-columns: 1fr 1.2fr; gap: 32px; align-items: start;">
+
+        <div>
+          <div
+            style="background:#FFF; border:1px solid var(--border-subtle); border-radius:var(--radius-md); padding:24px; margin-bottom:16px;">
+            <h3 style="font-size:1.2rem; margin-bottom:12px;">Immediate Contact Hotlines</h3>
+            <div style="display:flex; flex-direction:column; gap:12px;">
+              <a href="https://wa.me/15550192834?text=Hello%20Bsmart%20Team%2C%20I%20need%20a%20direct-from-China%20solar%20quote."
+                target="_blank" class="btn btn-orange btn-lg btn-full" style="background:#25D366; box-shadow:none;">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z" />
+                </svg>
+                <span>WhatsApp Live Chat</span>
+              </a>
+
+              <a href="tel:+18005557652" class="btn btn-outline-orange btn-lg btn-full">
+                <span>Call Global Hotline: +1 (800) 555-SOLAR</span>
+              </a>
+            </div>
+          </div>
+
+          <div
+            style="background:#FFF; border:1px solid var(--border-subtle); border-radius:var(--radius-md); padding:24px;">
+            <h4 style="font-size:1rem; margin-bottom:10px;">Global Operations & Sourcing Hubs</h4>
+            <p style="color:var(--text-secondary); font-size:0.85rem; line-height:1.6;">
+              <strong>Ningbo Manufacturing Hub:</strong> Building 4, High-Tech Industrial Zone, Ningbo, Zhejiang,
+              China<br>
+              <strong>Global Desk:</strong> 100 Energy Plaza, Houston, TX 77002
+            </p>
+          </div>
+        </div>
+
+        <div
+          style="background:#FFF; border:1px solid var(--border-subtle); border-radius:var(--radius-md); padding:28px;">
+          <h3 style="font-size:1.3rem; margin-bottom:16px;">Submit Direct Factory RFP</h3>
+
+          <form id="main-contact-form">
+            <div style="display:grid; grid-template-columns:1fr 1fr; gap:12px; margin-bottom:12px;">
+              <div>
+                <label style="font-size:0.8rem; font-weight:600; color:var(--text-secondary);"
+                  for="contact-first-name">First Name</label>
+                <input type="text" id="contact-first-name"
+                  style="width:100%; padding:8px 12px; border:1px solid var(--border-strong); border-radius:4px;"
+                  placeholder="John" required>
+              </div>
+              <div>
+                <label style="font-size:0.8rem; font-weight:600; color:var(--text-secondary);"
+                  for="contact-last-name">Last Name</label>
+                <input type="text" id="contact-last-name"
+                  style="width:100%; padding:8px 12px; border:1px solid var(--border-strong); border-radius:4px;"
+                  placeholder="Doe" required>
+              </div>
+            </div>
+
+            <div style="display:grid; grid-template-columns:1fr 1fr; gap:12px; margin-bottom:12px;">
+              <div>
+                <label style="font-size:0.8rem; font-weight:600; color:var(--text-secondary);"
+                  for="contact-email">Email</label>
+                <input type="email" id="contact-email"
+                  style="width:100%; padding:8px 12px; border:1px solid var(--border-strong); border-radius:4px;"
+                  placeholder="john@company.com" required>
+              </div>
+              <div>
+                <label style="font-size:0.8rem; font-weight:600; color:var(--text-secondary);" for="contact-phone">Phone
+                  / WhatsApp</label>
+                <input type="tel" id="contact-phone"
+                  style="width:100%; padding:8px 12px; border:1px solid var(--border-strong); border-radius:4px;"
+                  placeholder="+1 (555) 000-0000" required>
+              </div>
+            </div>
+
+            <div style="margin-bottom:12px;">
+              <label style="font-size:0.8rem; font-weight:600; color:var(--text-secondary);"
+                for="contact-service">Primary Service Needed</label>
+              <select id="contact-service"
+                style="width:100%; padding:8px 12px; border:1px solid var(--border-strong); border-radius:4px;"
+                required>
+                <option value="China Supply Chain Support">China Supply Support & Tier-1 Equipment</option>
+                <option value="Solar Station Setup">Solar Station Setup (Commercial EPC)</option>
+                <option value="Wholesale Distribution">Wholesale Container Order</option>
+                <option value="Professional Installation">Engineering & Installation</option>
+                <option value="Technical Support">24/7 Technical Support</option>
+              </select>
+            </div>
+
+            <div style="margin-bottom:16px;">
+              <label style="font-size:0.8rem; font-weight:600; color:var(--text-secondary);"
+                for="contact-message">Project Specifications</label>
+              <textarea id="contact-message"
+                style="width:100%; padding:8px 12px; border:1px solid var(--border-strong); border-radius:4px;" rows="3"
+                placeholder="Enter target kW capacity or panel requirements..."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-orange btn-full btn-lg">Submit RFP Inquiry</button>
+          </form>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================================================
+       8. FOOTER
+       ========================================================================== -->
+  <footer
+    style="background:#FFFFFF; border-top:1px solid var(--border-subtle); padding:40px 0 24px 0; margin-top:40px;">
+    <div class="container">
+      <div
+        style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:16px; margin-bottom:24px; padding-bottom:20px; border-bottom:1px solid var(--border-subtle);">
+        <a href="#" class="brand-logo-light">
+          <div class="logo-badge-orange" style="width:32px; height:32px;">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <circle cx="12" cy="12" r="5"></circle>
+            </svg>
+          </div>
+          <div class="logo-text-orange" style="font-size:1.3rem;">Bsmart<span>.</span></div>
+        </a>
+
+        <div style="display:flex; gap:20px; font-size:0.85rem; color:var(--text-secondary);">
+          <a href="#promo-grid-section" style="color:var(--text-secondary); text-decoration:none;">Factory Deals</a>
+          <a href="#services" style="color:var(--text-secondary); text-decoration:none;">Station EPC</a>
+          <a href="#calculator" style="color:var(--text-secondary); text-decoration:none;">Calculator</a>
+          <a href="#contact" style="color:var(--text-secondary); text-decoration:none;">Contact</a>
+        </div>
+      </div>
+
+      <div
+        style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; color:var(--text-muted); font-size:0.8rem;">
+        <div>&copy; 2026 Bsmart Solar & Tech Supply Co. All rights reserved. Direct-from-China Manufacturer Portal.
+        </div>
+        <div>Privacy Policy &bull; Terms of Supply &bull; Warranty Terms</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       9. RIGHT VERTICAL MICRO-NAVIGATION ICON RAIL
+       ========================================================================== -->
+  <div class="right-icon-rail">
+    <a href="#" class="rail-item" data-open-quote data-service="Rail Cart">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <circle cx="9" cy="21" r="1"></circle>
+        <circle cx="20" cy="21" r="1"></circle>
+        <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+      </svg>
+      <span class="rail-tooltip">Quote Cart (3)</span>
+    </a>
+    <a href="#calculator" class="rail-item">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <rect x="4" y="2" width="16" height="20" rx="2"></rect>
+        <line x1="8" y1="6" x2="16" y2="6"></line>
+      </svg>
+      <span class="rail-tooltip">ROI Calculator</span>
+    </a>
+    <a href="https://wa.me/15550192834" target="_blank" class="rail-item">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path
+          d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z">
+        </path>
+      </svg>
+      <span class="rail-tooltip">WhatsApp Live</span>
+    </a>
+    <a href="#promo-grid-section" class="rail-item">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <rect x="1" y="3" width="15" height="13"></rect>
+        <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon>
+      </svg>
+      <span class="rail-tooltip">China Shipping</span>
+    </a>
+    <a href="#" class="rail-item" id="scroll-top-btn">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <polyline points="18 15 12 9 6 15"></polyline>
+      </svg>
+      <span class="rail-tooltip">Back to Top</span>
+    </a>
+  </div>
+
+  <!-- ==========================================================================
+       10. CLEAN DUAL QR-CODE & RFP QUOTE MODAL DIALOG
+       ========================================================================== -->
+  <div class="modal-backdrop" id="quote-modal">
+    <div class="modal-container-light">
+      <button class="modal-close-btn" aria-label="Close modal">&times;</button>
+
+      <!-- Modal Tab Headers -->
+      <div class="modal-tabs-row">
+        <button class="modal-tab-btn active" data-target-tab="tab-qr-scan">📱 Scan Mobile QR Code</button>
+        <button class="modal-tab-btn" data-target-tab="tab-rfp-form">✉️ Formal RFP Quote</button>
+      </div>
+
+      <!-- Tab Pane 1: Mobile QR Code Scan -->
+      <div class="modal-tab-pane" id="tab-qr-scan">
+        <div class="qr-code-pane">
+          <div class="qr-code-box">
+            <!-- SVG Rendered Clean QR Code Simulation -->
+            <svg class="qr-code-img" viewBox="0 0 100 100" fill="var(--text-primary)">
+              <rect x="0" y="0" width="30" height="30" fill="none" stroke="var(--accent-orange)" stroke-width="3" />
+              <rect x="6" y="6" width="18" height="18" fill="var(--accent-orange)" />
+              <rect x="70" y="0" width="30" height="30" fill="none" stroke="var(--accent-orange)" stroke-width="3" />
+              <rect x="76" y="6" width="18" height="18" fill="var(--accent-orange)" />
+              <rect x="0" y="70" width="30" height="30" fill="none" stroke="var(--accent-orange)" stroke-width="3" />
+              <rect x="6" y="76" width="18" height="18" fill="var(--accent-orange)" />
+              <!-- Matrix Blocks -->
+              <rect x="40" y="10" width="10" height="10" />
+              <rect x="55" y="5" width="10" height="15" />
+              <rect x="35" y="35" width="30" height="30" fill="var(--accent-red)" />
+              <rect x="10" y="45" width="15" height="10" />
+              <rect x="75" y="45" width="15" height="15" />
+              <rect x="45" y="75" width="15" height="15" />
+              <rect x="70" y="75" width="20" height="10" />
+            </svg>
+          </div>
+          <div class="qr-scan-badge">Scan with WeChat or WhatsApp</div>
+          <p style="font-size:0.85rem; color:var(--text-secondary); margin-top:12px; max-width:400px;">
+            Scan code directly to connect with our Ningbo Factory Sourcing Desk on mobile for instant price lists &
+            container allocation.
+          </p>
+        </div>
+      </div>
+
+      <!-- Tab Pane 2: Traditional RFP Form -->
+      <div class="modal-tab-pane" id="tab-rfp-form" style="display:none;">
+        <form id="modal-quote-form">
+          <div style="margin-bottom:12px;">
+            <label style="font-size:0.8rem; font-weight:600; color:var(--text-secondary);" for="modal-name">Name or
+              Enterprise</label>
+            <input type="text" id="modal-name"
+              style="width:100%; padding:8px 12px; border:1px solid var(--border-strong); border-radius:4px;"
+              placeholder="Apex Industrial Energy" required>
+          </div>
+
+          <div style="display:grid; grid-template-columns:1fr 1fr; gap:12px; margin-bottom:12px;">
+            <div>
+              <label style="font-size:0.8rem; font-weight:600; color:var(--text-secondary);"
+                for="modal-email">Email</label>
+              <input type="email" id="modal-email"
+                style="width:100%; padding:8px 12px; border:1px solid var(--border-strong); border-radius:4px;"
+                placeholder="name@company.com" required>
+            </div>
+            <div>
+              <label style="font-size:0.8rem; font-weight:600; color:var(--text-secondary);" for="modal-phone">Phone /
+                WhatsApp</label>
+              <input type="tel" id="modal-phone"
+                style="width:100%; padding:8px 12px; border:1px solid var(--border-strong); border-radius:4px;"
+                placeholder="+1 (555) 000-0000" required>
+            </div>
+          </div>
+
+          <div style="margin-bottom:12px;">
+            <label style="font-size:0.8rem; font-weight:600; color:var(--text-secondary);" for="modal-service">Service
+              Requirement</label>
+            <select id="modal-service"
+              style="width:100%; padding:8px 12px; border:1px solid var(--border-strong); border-radius:4px;">
+              <option value="China Supply Support">China Supply Support & Tier-1 Equipment</option>
+              <option value="Solar Station Setup">Solar Station Setup & EPC Turnkey</option>
+              <option value="Wholesale Distribution">Wholesale Equipment Order</option>
+              <option value="Professional Installation">Professional Installation</option>
+              <option value="Technical Support">24/7 Technical Support</option>
+              <option value="Calculator Inquiry">Custom ROI Estimate</option>
+            </select>
+          </div>
+
+          <div style="margin-bottom:16px;">
+            <label style="font-size:0.8rem; font-weight:600; color:var(--text-secondary);" for="modal-notes">Estimate /
+              Notes</label>
+            <textarea id="modal-notes"
+              style="width:100%; padding:8px 12px; border:1px solid var(--border-strong); border-radius:4px;" rows="3"
+              placeholder="Enter target kW size or panel requirements..."></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-orange btn-full btn-lg">Submit Quote Request</button>
+        </form>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Bento Service Detail Modal -->
+  <div class="modal-backdrop" id="detail-modal">
+    <div class="modal-container-light">
+      <button class="modal-close-btn" aria-label="Close modal">&times;</button>
+      <h3 style="font-size:1.4rem; margin-bottom:12px; color:var(--text-primary);" id="detail-modal-title">Service
+        Details</h3>
+      <div id="detail-modal-body" style="color:var(--text-secondary); line-height:1.6; font-size:0.9rem;"></div>
+      <div style="margin-top:20px; text-align:right;">
+        <button class="btn btn-orange btn-sm" data-open-quote>Request Price Sheet</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Application Script -->
+  <script type="module" src="./src/js/app.js"></script>
+</body>
+
+</html>

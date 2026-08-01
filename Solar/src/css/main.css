@@ -1,0 +1,247 @@
+/* ==========================================================================
+   BSMART SOLAR & TECH SUPPLY - LIGHT MARKETPLACE DESIGN SYSTEM
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
+
+:root {
+  /* Color Palette - Crisp Light Marketplace Base */
+  --bg-primary: #FFFFFF;
+  --bg-secondary: #F5F7FA;
+  --bg-surface: #FAFAFA;
+  --bg-card: #FFFFFF;
+  --bg-hover: #FFF5F0;
+
+  /* Brand Accent Colors (Taobao / 1688 High Conversion Orange & Red) */
+  --accent-orange: #FF5000;
+  --accent-red: #E60012;
+  --accent-gold: #FF9900;
+  --accent-dark-orange: #E03E00;
+  --accent-green: #00B578;
+  --accent-blue: #1677FF;
+
+  /* Gradients */
+  --grad-orange-red: linear-gradient(135deg, #FF5000 0%, #E60012 100%);
+  --grad-gold-orange: linear-gradient(135deg, #FFB800 0%, #FF5000 100%);
+  --grad-light-card: linear-gradient(180deg, #FFFFFF 0%, #F9FAFB 100%);
+  --grad-badge-red: linear-gradient(135deg, #FF1E00 0%, #E60012 100%);
+
+  /* Border & Dividers */
+  --border-subtle: #E5E7EB;
+  --border-strong: #D1D5DB;
+  --border-orange: rgba(255, 80, 0, 0.3);
+  --border-red: rgba(230, 0, 18, 0.3);
+
+  /* Text Colors */
+  --text-primary: #111827;
+  --text-secondary: #4B5563;
+  --text-muted: #9CA3AF;
+  --text-orange: #FF5000;
+  --text-red: #E60012;
+
+  /* Shadows & Micro-effects */
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.06), 0 1px 2px rgba(0, 0, 0, 0.04);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.08);
+  --shadow-lg: 0 10px 25px rgba(255, 80, 0, 0.12);
+  --shadow-card: 0 2px 8px rgba(0, 0, 0, 0.05);
+
+  /* Typography */
+  --font-heading: 'Outfit', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-body: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+
+  /* Radius */
+  --radius-xs: 4px;
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-full: 9999px;
+
+  /* Transitions */
+  --transition-fast: 0.15s ease-in-out;
+  --transition-normal: 0.25s ease-in-out;
+}
+
+/* Base Reset & Typography */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 15px;
+  background-color: var(--bg-secondary);
+  color: var(--text-primary);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  min-height: 100vh;
+  overflow-x: hidden;
+  background: var(--bg-secondary);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-secondary);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--border-strong);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent-orange);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--text-primary);
+}
+
+/* Utility Pricing & Discount Badges */
+.price-tag-red {
+  font-family: var(--font-heading);
+  font-weight: 800;
+  color: var(--accent-red);
+  display: inline-flex;
+  align-items: baseline;
+  gap: 2px;
+}
+
+.price-tag-red .currency-symbol {
+  font-size: 0.85em;
+  font-weight: 700;
+}
+
+.price-strike {
+  text-decoration: line-through;
+  color: var(--text-muted);
+  font-size: 0.85em;
+  margin-left: 6px;
+}
+
+.badge-red {
+  background: var(--grad-badge-red);
+  color: #FFFFFF;
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 2px 8px;
+  border-radius: var(--radius-xs);
+  display: inline-block;
+}
+
+.badge-orange {
+  background: rgba(255, 80, 0, 0.1);
+  color: var(--accent-orange);
+  border: 1px solid rgba(255, 80, 0, 0.25);
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 2px 8px;
+  border-radius: var(--radius-xs);
+  display: inline-block;
+}
+
+.badge-green {
+  background: rgba(0, 181, 120, 0.1);
+  color: var(--accent-green);
+  border: 1px solid rgba(0, 181, 120, 0.25);
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 2px 8px;
+  border-radius: var(--radius-xs);
+}
+
+/* Container */
+.container {
+  width: 100%;
+  max-width: 1360px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+/* Button System */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 10px 20px;
+  border-radius: var(--radius-sm);
+  font-family: var(--font-heading);
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  transition: all var(--transition-fast);
+  white-space: nowrap;
+}
+
+.btn-orange {
+  background: var(--grad-orange-red);
+  color: #FFFFFF;
+  box-shadow: 0 2px 8px rgba(255, 80, 0, 0.3);
+}
+
+.btn-orange:hover {
+  background: linear-gradient(135deg, #E03E00 0%, #CC0010 100%);
+  box-shadow: 0 4px 14px rgba(255, 80, 0, 0.45);
+  transform: translateY(-1px);
+}
+
+.btn-outline-orange {
+  background: #FFFFFF;
+  color: var(--accent-orange);
+  border: 1px solid var(--accent-orange);
+}
+
+.btn-outline-orange:hover {
+  background: var(--bg-hover);
+}
+
+.btn-sm {
+  padding: 6px 14px;
+  font-size: 0.85rem;
+}
+
+.btn-lg {
+  padding: 14px 28px;
+  font-size: 1.05rem;
+}
+
+.btn-full {
+  width: 100%;
+}
+
+/* Section Header */
+.section-header-compact {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid var(--accent-orange);
+}
+
+.section-header-title {
+  font-size: 1.4rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.section-header-title span {
+  color: var(--accent-orange);
+}
+
+section {
+  padding: 40px 0;
+}
